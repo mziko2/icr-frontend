@@ -9,7 +9,7 @@ const NavBarInstance = ({ onSelect, activeKey, ...props }) => {
         </Navbar.Header>
         <Navbar.Body>
           <Nav onSelect={onSelect} activeKey={activeKey}>
-            <Nav.Item eventKey="1">Početna</Nav.Item>
+            <Nav.Item eventKey="1" >Početna</Nav.Item>
             <Nav.Item eventKey="2">O nama</Nav.Item>
             <Nav.Item eventKey="3">Registruj se</Nav.Item>
             <Nav.Item eventKey="4">Konkursi</Nav.Item>
