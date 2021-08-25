@@ -11,10 +11,10 @@ function App() {
       Nas cilj je pracenjem trendova, kao i potreba naših kandidata bez obzira na njihovu starosnu dob 
       i uvođenjem noviteta za što lakše iskustvo do vozačke dozvole, uvijek budemo korak ispred ostalih.
       </div>
-      <div id={'btn'}>
-      <Button>Registruj se</Button>
-      <Button>Apliciraj za posao</Button>
-      <Button>Saznaj više</Button>
+      <div id={'divBtnMain'}>
+      <Button className="buttonRegister" >Registruj se</Button>
+      <Button className="buttonMain">Apliciraj za posao</Button>
+      <Button className="buttonMain">Saznaj više</Button>
 
       </div> 
       </div>
