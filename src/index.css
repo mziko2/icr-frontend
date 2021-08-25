@@ -1,5 +1,5 @@
 body {
-  background-image: url("./main-page/backgorund.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("./main-page/backgorund.jpg");
   background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+object-fit: contain;
+height: auto;
+background-color: black;
+
+
 }
 
 code {

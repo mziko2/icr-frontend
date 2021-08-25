@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './main-page';
@@ -7,10 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBarInstance from './main-page/navigation';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Fragment>
         <NavBarInstance/>
      <App />
-  </React.StrictMode>,
+  </Fragment>,
   document.getElementById('root')
 );
 
