@@ -1,0 +1,13 @@
+
+Footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:#6cf;
+}
+#p1 {
+    text-align: center;
+    color: #ff6600;
+    height:60px;  
+
+}
