@@ -1,6 +1,8 @@
 import './App.css';
 import lecon from './lecon.png'; 
 import { Button } from 'rsuite';
+import Footer from '../components/Footer'
+
 
 
 function Pocetna() {

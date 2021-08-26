@@ -1,4 +1,5 @@
 import './Faq.css';
+import Footer from '../components/Footer'
 
 
 function FAQ() {
@@ -30,7 +31,7 @@ Ne dovodeći u pitanje odredbe propisa o tipnom odobrenju vozila o kojem je rije
 
                 </ul>
             </div>
-
+            <Footer></Footer>
         </div>
     );
 }

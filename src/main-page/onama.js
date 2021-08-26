@@ -1,13 +1,13 @@
 import './Onama.css';
 import lecon from './lecon.png';
 import { Fragment } from 'react';
-
+import Footer from '../components/Footer'
 
 function Onama() {
     return (
         <div className="onama">
 
-            <div className="naslov" >
+            <div className="naslovMain" >
                 <div>O nama </div>
             </div>
 
@@ -39,6 +39,7 @@ function Onama() {
                     </li>
                 </ul>
             </div>
+            <Footer/>
 
         </div>
     );

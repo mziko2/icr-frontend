@@ -1,6 +1,6 @@
 
 .onama{
-    margin: 0px 15% 0% 15%;
+    margin: 7% 15% 7% 15%;
     justify-content: center;
     align-items: center;
     resize: both;
@@ -12,13 +12,18 @@
 
 }
 .naslov{
+   
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.naslovMain{
     display:list;
     width: 20%;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
 }
-
 .tekst{
     white-space: pre-line;
 
