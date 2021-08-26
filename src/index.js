@@ -1,15 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Footer from './components/Footer'
 import App from './main-page';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBarInstance from './main-page/navigation';
+
 
 ReactDOM.render(
   <div>
-        <NavBarInstance/>
      <App />
   </div>,
   document.getElementById('root')
