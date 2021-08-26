@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 object-fit: contain;
 height: auto;
+background-repeat: no-repeat;
 background-color: black;
 
 

@@ -35,11 +35,11 @@ export const NavBarInstance = () => (
           <Nav.Item><Nav.Link href="/faq">FAQ</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
-
-    <Nav className="justify-content-end">  
-    <Nav.Item  ><Nav.Link href="/login" >Login</Nav.Link></Nav.Item>
-
+      <Navbar.Collapse id="collapse navbar-collapse">
+      <Nav className="justify-content-end" style={{ width: "100%" }} >  
+      <Nav.Item  ><Nav.Link href="/login" >Login</Nav.Link></Nav.Item>
     </Nav>
+    </Navbar.Collapse>
 
     </Navbar>
 
