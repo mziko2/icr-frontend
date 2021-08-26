@@ -1,13 +1,68 @@
 .login{
-        margin: 7% 15% 7% 15%;
+        margin: 7% 30% 7% 30%;
         justify-content: center;
         align-items: center;
         resize: both;
-        border: 3px solid black;
         padding-top: 0px !important;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 0.7cm;
-        max-width: 500px;    
+        max-width: 40%;    
+        padding: 0cm 1cm 1cm 0cm;
+    }
     
+    .naslov{
+   
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+    }
+    .fields {
+        display: inline;
+        width: 50%;
     }
 
+    .field {  
+       display:  inline-flex;
+        margin: 0% 5% 0% 5%;
+        padding: 13px;
+        color: aliceblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        border-radius: 0.7cm;
+
+    }
+    .label {
+        margin-right: 20%;
+        max-width: 25%;
+    }
+    .buttonPrijava{
+    margin-top: 1rem;
+    margin-left: 13%;
+    margin-bottom: 1rem;
+    background-color: #ff6600;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600;
+    cursor: pointer;
+    width: 20%;
+
+    overflow: hidden;
+      }
+    .color {   
+        color: #ff6600;
+    }
+    .color2 {   
+        margin-left: 1rem;
+        color: #ff6600;
+    }
+    .registrujSe{
+        display: inline-flex;
+        color: aliceblue;
+        margin-right: 1em;
+    }
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 0.7cm;
+      }
