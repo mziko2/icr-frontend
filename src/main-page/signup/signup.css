@@ -1,0 +1,65 @@
+.register{
+    margin: 7% 30% 7% 30%;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    padding-top: 0px !important;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.7cm;
+    max-width: 70%;    
+    padding: 0cm 1cm 1cm 0cm;
+    width: 700px;
+}
+
+.naslov{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.fields {
+    display: inline;
+    width: 70%;
+}
+
+.field {  
+   display:  inline-flex;
+    margin: 0% 5% 0% 5%;
+    padding: 13px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    border-radius: 0.7cm;
+
+}
+.label {
+    margin-right: 20%;
+    max-width: 40%;
+    width: 200px;
+}
+.buttonRegister{
+margin-top: 1rem;
+margin-left: 13%;
+margin-bottom: 1rem;
+background-color: #ff6600;
+background-repeat: no-repeat;
+border: 2px solid white;
+color: aliceblue;
+border-radius: 2cm;
+border-color: #ff6600;
+cursor: pointer;
+width: 20%;
+
+overflow: hidden;
+  }
+.color {   
+    color: #ff6600;
+}
+.color2 {   
+    margin-left: 1rem;
+    color: #ff6600;
+}
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 0.7cm;
+    display: inline;
+  }

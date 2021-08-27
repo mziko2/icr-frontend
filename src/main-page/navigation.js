@@ -37,7 +37,8 @@ export const NavBarInstance = () => (
       </Navbar.Collapse>
       <Navbar.Collapse id="collapse navbar-collapse">
       <Nav className="justify-content-end" style={{ width: "100%" }} >  
-      <Nav.Item  ><Nav.Link href="/login" >Login</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/login" >Prijava</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/signup" >Registracija</Nav.Link></Nav.Item>
     </Nav>
     </Navbar.Collapse>
 
