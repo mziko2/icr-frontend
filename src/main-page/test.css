@@ -1,0 +1,67 @@
+.test{
+    margin: 7% 30% 7% 30%;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    padding-top: 0px !important;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.7cm;
+    max-width: 60%;
+    padding: 0% 5% 2% 5%;
+}
+
+.answerButtons{
+    display:inline-flex
+}
+.rowAnswer{
+display: inline-grid;
+
+}
+.pitanje{
+    background-color: aqua;
+    margin-left: 10%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    background-color: #5e5e5e;
+    border: 2px solid #ff6600;
+    border-radius: 0.7cm;
+}
+
+.answer{
+    width: max-content;
+margin-bottom: 1rem;
+background-color: #ff6600;
+background-repeat: no-repeat;
+border: 2px solid white;
+color: aliceblue;
+border-radius: 2cm;
+border-color: #ff6600;
+cursor: pointer;
+overflow: hidden;
+}
+
+.naslov{
+
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+}
+.label {
+    margin-right: 20%;
+    max-width: 25%;
+}
+
+.color {   
+    color: #ff6600;
+}
+.color2 {   
+    margin-left: 1rem;
+    color: #ff6600;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 0.7cm;
+  }
