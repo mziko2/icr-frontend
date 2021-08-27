@@ -15,7 +15,7 @@ function App() {
       <Router>
     <NavBarInstance/>
     <Switch>
-    <Route exact path="/" component={PocetnaUser} />
+    <Route exact path="/" component={Pocetna} />
     <Route path="/about" component={Onama} />
     <Route path="/faq" component={FAQ}/>
     <Route path="/login" component={Login}/>
