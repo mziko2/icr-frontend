@@ -3,11 +3,13 @@ import lecon from './lecon.png';
 import Pocetna from './pocetna'
 import Onama from './onama'
 import FAQ from './faq'
+import Test from './test'
 import Login from './login'
 import Register from './signup/signup';
 import {Jobs} from './jobs/jobs';
 import {OnlineTests} from './onlinetests/onlinetests'
 import {NavBarInstance} from './navigation';
+import PocetnaUser from './pocetnaUser'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

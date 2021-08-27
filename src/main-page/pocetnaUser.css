@@ -1,0 +1,49 @@
+
+#divBtnMain {
+    display: inline;
+    
+    
+    }
+    .buttonMain {
+      margin-top: 10px;
+      margin-left: 15px;   
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      border: 2px solid white;
+      color: aliceblue;
+      border-radius: 2cm;
+      cursor:pointer;
+      overflow: hidden;        
+    }
+    
+    .buttonRegister{
+      margin-top: 10px;
+      background-color: #ff6600;
+      background-repeat:no-repeat;
+      border: 2px solid white;
+      color: aliceblue;
+      border-radius: 2cm;
+      border-color: #ff6600 ;
+      cursor:pointer;
+      overflow: hidden;   
+    }
+    .Pocetna {
+        text-align: left;
+        margin: 5% 0 0% 15%;
+        width: 650px;
+    }
+    .Pocetna #text {
+     margin-bottom: 2%;
+     color: white;
+    }
+    .photo {
+      margin-top: 0%;
+      height: 250;
+      width: 450px; 
+    }
+    .naslov{
+        margin-bottom: 2%;
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 45px;
+    }
