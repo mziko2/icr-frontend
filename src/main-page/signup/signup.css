@@ -22,7 +22,7 @@
 }
 
 .field {  
-   display:  inline-flex;
+    display: -webkit-inline-box;
     margin: 0% 5% 0% 5%;
     padding: 13px;
     color: aliceblue;
