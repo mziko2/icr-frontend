@@ -6,6 +6,7 @@ import FAQ from './faq'
 import Login from './login'
 import Register from './signup/signup';
 import {NavBarInstance} from './navigation';
+import PocetnaUser from './pocetnaUser'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Router>
     <NavBarInstance/>
     <Switch>
-    <Route exact path="/" component={Pocetna} />
+    <Route exact path="/" component={PocetnaUser} />
     <Route path="/about" component={Onama} />
     <Route path="/faq" component={FAQ}/>
     <Route path="/login" component={Login}/>
