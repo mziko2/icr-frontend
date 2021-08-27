@@ -30,7 +30,6 @@ export const NavBarInstance = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item><Nav.Link href="/about">O nama</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/signup">Registruj se</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="/jobs">Konkursi</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="/faq">FAQ</Nav.Link></Nav.Item>
         </Nav>

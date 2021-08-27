@@ -5,6 +5,8 @@ import Onama from './onama'
 import FAQ from './faq'
 import Login from './login'
 import Register from './signup/signup';
+import {Jobs} from './jobs/jobs';
+import {OnlineTests} from './onlinetests/onlinetests'
 import {NavBarInstance} from './navigation';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -19,7 +21,8 @@ function App() {
     <Route path="/faq" component={FAQ}/>
     <Route path="/login" component={Login}/>
     <Route path="/signup" component={Register}/>
-
+    <Route path="/jobs" component={Jobs}/>
+    <Route path="/onlinetests" component={OnlineTests}/>
     </Switch>
     </Router>
        </div>

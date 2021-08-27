@@ -1,0 +1,34 @@
+#title {
+    text-align: center;
+    font-family: arial, sans-serif;
+  }
+  
+  #onlinetests {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 70%;
+    margin-left: 15%;
+}
+  
+  #onlinetests td, #onlinetests th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #onlinetests tr{background-color: #f2f2f2;}
+
+  
+  #onlinetests tr:hover {background-color: #ddd;}
+  
+  #onlinetests th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+  }
+  .buttonRegister{
+      width: 120px;
+  }
+  

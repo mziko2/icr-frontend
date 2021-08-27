@@ -2,7 +2,7 @@ import './App.css';
 import lecon from './lecon.png'; 
 import { Button } from 'rsuite';
 import Footer from '../components/Footer'
-
+import './pocenta.css';
 
 
 function Pocetna() {
@@ -14,9 +14,9 @@ function Pocetna() {
       i uvođenjem noviteta za što lakše iskustvo do vozačke dozvole, uvijek budemo korak ispred ostalih.
       </div>
       <div id={'divBtnMain'}>
-      <Button className="buttonRegister" >Registruj se</Button>
-      <Button className="buttonMain">Apliciraj za posao</Button>
-      <Button className="buttonMain">Saznaj više</Button>
+      <Button className="buttonRegister" href="/signup" >Registruj se</Button>
+      <Button className="buttonMain" href="/jobs">Apliciraj za posao</Button>
+      <Button className="buttonMain" href="/about">Saznaj više</Button>
 
       </div> 
       </div>
