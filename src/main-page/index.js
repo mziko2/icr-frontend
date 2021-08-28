@@ -26,6 +26,8 @@ function App() {
     <Route path="/jobs" component={Jobs}/>
     <Route path="/onlinetests" component={OnlineTests}/>
     <Route path="/test" component={Test}/>
+    <Route path="/userMain" component={PocetnaUser}/>
+
 
     </Switch>
     </Router>

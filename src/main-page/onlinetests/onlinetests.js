@@ -9,7 +9,17 @@ export class OnlineTests extends React.Component {
              { id: 1, kategorija: "B", broj_pitanja: 30, vec_radjen:"NE" },
              { id: 2, kategorija: "B", broj_pitanja: 30, vec_radjen:"DA" },
              { id: 3, kategorija: "A", broj_pitanja: 30, vec_radjen:"NE" },
-             { id: 4, kategorija: "C", broj_pitanja: 30, vec_radjen:"DA" }
+             { id: 5, kategorija: "C", broj_pitanja: 30, vec_radjen:"DA" },
+             { id: 6, kategorija: "A", broj_pitanja: 30, vec_radjen:"DA" },
+             { id: 7, kategorija: "C", broj_pitanja: 30, vec_radjen:"DA" },
+             { id: 8, kategorija: "B", broj_pitanja: 30, vec_radjen:"NE" },
+             { id: 9, kategorija: "C", broj_pitanja: 30, vec_radjen:"DA" },
+             { id: 10, kategorija: "B", broj_pitanja: 30, vec_radjen:"NE" }
+
+
+
+
+
           ]
        }
     }
@@ -31,7 +41,7 @@ export class OnlineTests extends React.Component {
  
     render() {
        return (
-          <div>
+          <div className="tabela">
              <h1 id='title'>Online Testovi</h1>
              <table id='onlinetests'>
                 <tbody>

@@ -17,7 +17,7 @@
       overflow: hidden;        
     }
     
-    .buttonRegister{
+    .buttonTestovi{
       text-decoration: none;
       margin-top: 10px;
       background-color: #ff6600;
@@ -43,7 +43,7 @@
       height: 250;
       width: 450px; 
     }
-    .naslov{
+    .naslovRaspored{
         margin-bottom: 2%;
         color: white;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
