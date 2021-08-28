@@ -32,6 +32,7 @@ display: inline-grid;
 }
 
 .pitanje{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: aliceblue;
 margin-bottom: 8%;
 text-align: left;
@@ -43,10 +44,9 @@ font-size: 25px;
 margin-bottom: 1rem;
 background-color: transparent;
 background-repeat: no-repeat;
-border: 2px solid white;
+border: 2px solid #ff6600;
 color: aliceblue;
 border-radius: 2cm;
-border-color: #ff6600;
 cursor: pointer;
 overflow: hidden;
 width: 75%;
@@ -54,9 +54,11 @@ width: 75%;
 
 .naslov{
 
-    color: white;
+    color: aliceblue;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
+    text-align: left;
+
 }
 .label {
     margin-right: 20%;

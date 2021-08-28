@@ -3,7 +3,7 @@ import lecon from './lecon.png';
 import Pocetna from './pocetna'
 import Onama from './onama'
 import FAQ from './faq'
-import Test from './test'
+import {Test} from './test'
 import Login from './login'
 import Register from './signup/signup';
 import {Jobs} from './jobs/jobs';
