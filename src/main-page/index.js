@@ -25,6 +25,8 @@ function App() {
     <Route path="/signup" component={Register}/>
     <Route path="/jobs" component={Jobs}/>
     <Route path="/onlinetests" component={OnlineTests}/>
+    <Route path="/test" component={Test}/>
+
     </Switch>
     </Router>
        </div>

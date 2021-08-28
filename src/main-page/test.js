@@ -8,13 +8,13 @@ function Login() {
     return (
         <div className="test">
             <div className="naslov">Test 19</div>
+            <div className='okvir'>
             <div className='pitanje'>
-            <div>
-                    PItanje wadhaiodhwaoudhawuidhwaui
+                  neko duze pitanje neko duze pitanjeneko duze pitanjeneko duze pitanjeneko duze pitanje
                     </div>
-               <div>
+               <div className='rowAnswer'>
                
-                        <div className='rowAnswer'>
+                        <div >
                             <Button className="answer" >Prijava</Button>
                         </div>
                         <div>

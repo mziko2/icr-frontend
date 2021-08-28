@@ -5,6 +5,7 @@
     
     }
     .buttonMain {
+      text-decoration: none;
       margin-top: 10px;
       margin-left: 15px;   
       background-color: Transparent;
@@ -17,6 +18,7 @@
     }
     
     .buttonRegister{
+      text-decoration: none;
       margin-top: 10px;
       background-color: #ff6600;
       background-repeat:no-repeat;

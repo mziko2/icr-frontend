@@ -36,6 +36,7 @@
         max-width: 25%;
     }
     .buttonPrijava{
+    text-decoration: none;
     margin-top: 1rem;
     margin-left: 13%;
     margin-bottom: 1rem;
@@ -58,6 +59,7 @@
         color: #ff6600;
     }
     .registrujSe{
+        text-decoration: none;
         display: inline-flex;
         color: aliceblue;
         margin-right: 1em;

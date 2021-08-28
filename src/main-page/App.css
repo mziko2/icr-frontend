@@ -13,6 +13,7 @@ display: inline;
 
 }
 .buttonMain {
+  text-decoration: none;
   margin-top: 10px;
   margin-left: 15px;   
   background-color: Transparent;
@@ -25,6 +26,7 @@ display: inline;
 }
 
 .buttonRegister{
+  text-decoration: none;
   margin-top: 10px;
   margin-left: 0px;   
   background-color: #ff6600;
