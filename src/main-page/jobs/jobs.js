@@ -18,10 +18,13 @@ export class Jobs extends React.Component {
            const { id, naziv } = jobs //destructuring
            return (
               <tr key={id}>
-                 <td>{naziv}</td>
+                 <td onClick={() => this.getJobData(id)}>{naziv}</td>
               </tr>
            )
         })
+     }
+     getJobData(id){
+
      }
     render (){
         return(
