@@ -15,25 +15,20 @@ export class OnlineTests extends React.Component {
              { id: 8, kategorija: "B", broj_pitanja: 30, vec_radjen:"NE" },
              { id: 9, kategorija: "C", broj_pitanja: 30, vec_radjen:"DA" },
              { id: 10, kategorija: "B", broj_pitanja: 30, vec_radjen:"NE" }
-
-
-
-
-
           ]
        }
     }
   
     renderTableData() {
-       return this.state.onlinetests.map((student, index) => {
-          const { id, kategorija, broj_pitanja, vec_radjen } = student //destructuring
+       return this.state.onlinetests.map((tests, index) => {
+          const { id, kategorija, broj_pitanja, vec_radjen } = tests //destructuring
           return (
              <tr key={id}>
                 <td>{id}</td>
                 <td>{kategorija}</td>
                 <td>{broj_pitanja}</td>
                 <td>{vec_radjen}</td>
-                <td><Button className="buttonRegister">Započni test</Button></td>
+                <td><Button className="buttonRegister" href="/test">Započni test</Button></td>
              </tr>
           )
        })
