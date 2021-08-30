@@ -12,20 +12,103 @@
     width: 70%;
     margin-left: 15%;
 }
-  
-  #jobs tr {
-    line-height: 14px;
-    -webkit-box-shadow: 0px 1px 0px 0px rgba(206, 201, 201, 0.99);
-    -moz-box-shadow: 0px 1px 0px 0px rgba(206, 201, 201, 0.99);
-    box-shadow: 0px 1px 0px 0px rgba(206, 201, 201, 0.99);
-    color: aliceblue;
-  }  
+.row{
+  column-gap: 12%;
+}
+.col-6{
+  flex: 0 0 auto;
+    width: 55%;
+  resize: both;
+  padding-top: 0px !important;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.7cm;
+  max-width: 45%;    
+}
+
+.prijavi {
+  display:inline-flex;
+}
+
+.buttonApliciraj{
+  text-decoration: none;
+  margin-left: 5%;
+ 
+  background-color: #ff6600;
+  background-repeat:no-repeat;
+  border: 2px solid white;
+  color: aliceblue;
+  border-radius: 2cm;
+  border-color: #ff6600 ;
+  cursor:pointer;
+  overflow: hidden; 
+
+}
+ 
   #jobs tr:hover {background-color: #ddd;}
-  
-  #jobs th {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-align: center;
-    background-color: #ff6600;
+  #obaveznoPolje {
+    font-size: 65%;
+    text-align: left;
+  }
+
+  .konkursNaslov {
+    background: #ff6600;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+  }
+  .itemAccordion{
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(209, 202, 202, 0.99);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(209, 202, 202, 0.99);
+    box-shadow: 0px 1px 0px 0px rgba(209, 202, 202, 0.99);
+    background: rgba(22, 21, 21, 0.705);
     color: aliceblue;
   }
+  .panel {
+    background-color: #5e5e5e ;
+    text-align: left;
+    padding-left: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .konkursi{
+    font-size: 45px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+  }
+
+
+    #odabrani {
+      text-align: left;
+
+      background-color: #5e5e5e;
+    font-size: smaller;
+    width: 65%;
+}
+
+  .accordion {
+    overflow-y: scroll;
+    max-height: 65%;
+  }
+  .fieldKonkurs {
+    display: -webkit-inline-box;
+     margin: 0% 10% 0% 0%; 
+    padding: 10px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 0.7cm;
+  }
+  input[type=date] {
+    border: 2px solid black;
+    border-radius: 0.7cm;
+    width: 50%;
+  }
+ #obrazovanje {
+   height: 3cm;
+
+  }
+  #iskustvo{
+    height: 3cm;
+   }
+   
