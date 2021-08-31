@@ -10,6 +10,7 @@ import {Jobs} from './jobs/jobs';
 import {OnlineTests} from './onlinetests/onlinetests'
 import {NavBarInstance} from './navigation';
 import PocetnaUser from './pocetnaUser'
+import Report from './report/report'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path="/onlinetests" component={OnlineTests}/>
     <Route path="/test" component={Test}/>
     <Route path="/userMain" component={PocetnaUser}/>
+    <Route path="/report" component={Report}/>
     </Switch>
     </Router>
        </div>

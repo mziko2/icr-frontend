@@ -1,0 +1,27 @@
+.container{
+    margin: 7% 15% 7% 6%;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    border: 3px solid black;
+    padding-top: 0px !important;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.7cm;
+}
+.color-box{
+    border: .05rem solid var(--deepdark);
+    border-radius: 3px;
+    float: left;
+    height: 24px;
+    margin: 2px 8px 0 0;
+    width: 24px;
+}
+ul{
+    padding-top: 70px;
+    margin: 10px 8px 8px 2px;
+    list-style-type: none;
+}
+li{
+    height: 30px;
+    color: white;
+}
