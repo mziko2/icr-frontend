@@ -12,6 +12,7 @@ function MyChart() {
     ],
     []
   )
+
  
   const axes = React.useMemo(
     () => [
@@ -28,7 +29,8 @@ function MyChart() {
       style={{
         width: '350px',
         height: '300px',
-        'marginTop': '40px'
+        'marginTop': '40px',
+        'marginRight': '40px'
       }}
     >
       <Chart data={data} axes={axes} tooltip  />

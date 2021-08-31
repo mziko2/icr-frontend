@@ -22,6 +22,9 @@ ul{
     list-style-type: none;
 }
 li{
-    height: 30px;
+    height: 50px;
     color: white;
+}
+#chartcol{
+    margin-left: 40px;
 }

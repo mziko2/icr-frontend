@@ -6,7 +6,7 @@ function Report() {
     return (
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" id="chartcol">
             <PieChart
                 data={[
                     { title: 'Two', value: 21, color: '#B9AC92' },
