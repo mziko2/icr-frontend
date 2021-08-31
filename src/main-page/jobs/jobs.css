@@ -2,7 +2,10 @@
     margin-top: 3%;
 }
 
-
+#okvir{
+  border: none;
+  background: none;
+}
 #jobs {
     background: rgba(22, 21, 21, 0.705);
     text-align: center;

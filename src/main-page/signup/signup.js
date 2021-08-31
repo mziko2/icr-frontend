@@ -4,7 +4,7 @@ import { Button } from 'rsuite';
 function Register() {
     return (
         <div className="register">
-            <div className="naslov container">Registruj se</div>
+            <div id={"okvir"} className="naslov container">Registruj se</div>
             <div className="fields">
                     <div className="field">
                     <div className="label">Ime</div>

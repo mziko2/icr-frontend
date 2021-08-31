@@ -62,7 +62,7 @@ export class Jobs extends React.Component {
     render() {
     
         return (
-            <div class="container">
+            <div id={"okvir"} class="container">
                 <div class="row">
                     <div class="col-4">
                         <div className="konkursi">KONKURSI</div>
