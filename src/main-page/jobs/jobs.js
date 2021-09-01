@@ -77,7 +77,7 @@ export class Jobs extends React.Component {
                 
 
             
-            <div className="fields">
+            <div className="konkursiPolja">
 
             <div className="fieldKonkurs">
                     <div className="label">Odabrana pozicija</div>

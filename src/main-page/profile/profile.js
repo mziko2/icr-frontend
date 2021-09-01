@@ -1,9 +1,20 @@
 import './profile.css';
-
+import React from 'react'; 
 import { Button } from 'rsuite';
 
-function Profile() {
-    return (
+export class Profile extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            id: 1, ime: "Emir",prezime:"Kurtovic",adresa:"Zmaj od Bosne bb",jmbg:"2411215475",broj:"234-252",email:"dwad@gmail.com",username:"username"
+
+        }
+    }
+
+    render (){
+       
+        return (
         <div className="onama">
 
             <div className="profilnaslov" >
@@ -14,35 +25,35 @@ function Profile() {
                     <div className="fields">
                         <div className="field">
                             <div className="label">Ime</div>
-                            <div className="values">EMIR</div></div>
+                            <div className="values">{this.state.ime}</div></div>
 
                         <div className="field">
                             <div className="label">Prezime</div>
-                            <div className="values">Kurtovic</div></div>
+                            <div className="values">{this.state.prezime}</div></div>
 
                         <div className="field">
                             <div className="label">Adresa</div>
-                            <div className="values">Zmaj od Bosne bb</div></div>
+                            <div className="values">{this.state.adresa}</div></div>
 
 
                         <div className="field">
                             <div className="label">JMBG</div>
-                            <div className="values">123456789</div></div>
+                            <div className="values">{this.state.jmbg}</div></div>
 
 
                     </div></div>
                 <div className="leftBorder">  <div className="fields">
                     <div className="field">
                         <div className="label">Broj telefona: </div>
-                        <div className="values"> 222-222</div></div>
+                        <div className="values">{this.state.broj}</div></div>
 
                     <div className="field">
                         <div className="label">E-mail</div>
-                        <div className="values">dawdw@gmail.com</div></div>
+                        <div className="values">{this.state.email}</div></div>
 
                     <div className="field">
                         <div className="label">Username</div>
-                        <div className="values">wadawdwa</div></div>
+                        <div className="values">{this.state.username}</div></div>
 
 
                     <div className="field">
@@ -54,7 +65,8 @@ function Profile() {
             </div>
             <div id={"kontakt"}>Ukoliko je potrebno pormjeniti neke od ličnih podataka kontaktirajte nas na 033/222-000 ili putem e-mail adrese info@lecon.ba</div>
         </div>
-    );
+        )
+    }
+    
 }
 
-export default Profile;

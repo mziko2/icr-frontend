@@ -5,6 +5,7 @@
 #okvir{
   border: none;
   background: none;
+  margin-left: 15%;
 }
 #jobs {
     background: rgba(22, 21, 21, 0.705);
@@ -96,7 +97,7 @@
   .fieldKonkurs {
     display: -webkit-inline-box;
      margin: 0% 10% 0% 0%; 
-    padding: 10px;
+ 
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
@@ -113,5 +114,9 @@
   }
   #iskustvo{
     height: 3cm;
+   }
+
+   .konkursiPolja{
+     font-size: 45px;
    }
    

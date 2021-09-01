@@ -11,7 +11,7 @@ import {OnlineTests} from './onlinetests/onlinetests'
 import {NavBarInstance} from './navigation';
 import PocetnaUser from './pocetnaUser'
 import Report from './report/report'
-import Profile from './profile/profile'
+import {Profile} from './profile/profile'
 
 import {Schedule} from './myschedule/schedule'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
