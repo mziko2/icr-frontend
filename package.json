@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-select": "^4.3.1",
+    "reactjs-popup": "^2.0.5",
     "rsuite": "^4.10.2",
     "styled": "^1.0.0",
     "styled-components": "^5.3.1",
@@ -49,5 +50,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1"
+  }
 }

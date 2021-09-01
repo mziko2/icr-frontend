@@ -1,0 +1,33 @@
+
+.my-popup-content {
+    margin: auto;
+    background: lightgray;
+    border: 2px solid orange;
+    width: 40%;
+    padding: 5px;
+    height: 76%;
+    position: relative;
+    color: black;
+  }
+  .my-popup-arrow {
+    color: black;
+  }
+  [role='tooltip'].my-popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+    color: black;
+  }
+  
+  .my-popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
+  [data-popup='tooltip'].my-popup-overlay {
+      color: black;
+  }
+  .fields{
+      color: black;
+  }
+  

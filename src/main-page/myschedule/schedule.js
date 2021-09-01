@@ -1,6 +1,7 @@
 import React from 'react'; 
 import './schedule.css';
 import {Button} from 'rsuite'
+import ControlledPopup from './popup';
 
 
 export class Schedule extends React.Component {
@@ -53,7 +54,10 @@ export class Schedule extends React.Component {
                    {this.renderTableData()}
                 </tbody>
              </table>
-             <div > <Button id={"zakazi"} className="otkazi" >Zakaži čas</Button>  </div>
+             <div >
+               <Button id={"zakazi"} className="otkazi" >Zakaži čas</Button> 
+               <ControlledPopup/>
+                  </div>
           </div>
        )
     }
