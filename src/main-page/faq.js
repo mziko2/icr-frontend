@@ -13,7 +13,7 @@ function FAQ() {
             <div className='tekst'>
                 <div className="podnaslov">Koje skraćenice odgovaraju kojim kategorijama</div>
                 <ul  >
-                    <li>(A1) Motocikl do 125 cm3 i snage motora do 11 KW</li>
+                    <li>(A1) Motocikl do 125 cm3 i snage motora do 11 KW</li>w
                     <li>(A2)  motocikli sa ili bez bočne prikolice čija snaga ne prelazi 35 kW i čiji omjer snaga/masa ne prelazi 0,2 kW/kg, a ne potječu od vozila čija je snaga dvostruko veća i više</li>
                     <li>(A) Motocikli sa ili bez bočne prikolice, motocikli na tri kotača snage preko 15kW, minimalna starosna dob 21</li>
                     <li>(B) Motorna vozila, osim vozila AM, A1, A2, A, F i G kategorije čija najveća dopuštena masa ne prelazi 3.500 kg i koja su dizajnirana i konstruirana za prijevoz ne više od 8 putnika, ne računajući sjedalo za vozača; motorna vozila ove kategorije mogu biti u kombinaciji s priključnim vozilom čija najveća dopuštena masa ne prelazi 750 kg.

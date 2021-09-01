@@ -21,8 +21,8 @@ function Login() {
                 <Button className="buttonPrijava" >Prijava</Button>
             </div>
             <div className="color">
-                Zaboravili ste username ili password ?</div>
-            <div className="registrujSe">  <div>  Niste registrovani ?  </div><div className="color2">  Registrujte se!</div></div>
+                Zaboravili ste username ili password?</div>
+            <div className="registrujSe">  <div>  Niste registrovani ?  </div><div className="color2"><a className="color2" href="/signup">Registrujte se!</a></div></div>
         </div>
 
     );
