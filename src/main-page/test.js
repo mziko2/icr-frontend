@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme)=>({
 
 const dummyTest={
     id: 4, 
-    brojPitanja: 12,
+    brojPitanja: 2,
     pitanja:[
         {
             tekstPitanja: "Koje je najmanja dozvoljena brzina kretanja automobila na autoputu?",
@@ -103,7 +103,7 @@ export const Test = ()=> {
         setTimeout(()=>{
             setOdabraniOdgovor(null)
             setBrojTrenutnogPitanja(brojTrenutnogPitanja+1)
-        },7000)
+        },4000)
     }
     
 
@@ -114,12 +114,12 @@ export const Test = ()=> {
            return  <Button  className={classes.answer} onClick={()=>{odaberiOdgovor(odgovor)}} >{odgovor}</Button>
         }
         if(odgovor==tacanOdgovor)
-            return     <Button  className={classes.correctAnswer} onClick={()=>{odaberiOdgovor(odgovor)}} >{odgovor}</Button>
+            return     <Button  className={classes.correctAnswer}  >{odgovor}</Button>
         
         if(odgovor!=tacanOdgovor&& odgovor==odabraniOdgovor)
-            return   <Button  className={classes.inccorectAnswer} onClick={()=>{odaberiOdgovor(odgovor)}} >{odgovor}</Button>
+            return   <Button  className={classes.inccorectAnswer}  >{odgovor}</Button>
         
-        return <Button className={classes.answer} onClick={()=>{odaberiOdgovor(odgovor)}} >{odgovor}</Button>
+        return <Button className={classes.answer}  >{odgovor}</Button>
         
 
 
@@ -134,21 +134,25 @@ export const Test = ()=> {
     return (
         <div className="test">
             <div className="naslov">Test broj {test.id}</div>
-            <div className='okvir'>
-            <div className='pitanje'>
+            {brojTrenutnogPitanja<test.brojPitanja && <div className='okvir'>
+                <div className='pitanje'>
                   Pitanje {brojTrenutnogPitanja +1}. {test.pitanja[brojTrenutnogPitanja].tekstPitanja}
-            </div>
-             <div className={classes.pitanjaGrid}>
-                {test.pitanja[brojTrenutnogPitanja].odgovori.map((odgovor,index)=>{
-                    return(
-                        <div key={index} style={{width:"45%"}}>
-                            {dajDugme(odgovor)}
-                        </div>)
+                </div>
+                <div className={classes.pitanjaGrid}>
+                    {test.pitanja[brojTrenutnogPitanja].odgovori.map((odgovor,index)=>{
+                        return(
+                            <div key={index} style={{width:"45%"}}>
+                                {dajDugme(odgovor)}
+                            </div>)
 
-                })}
+                    })}
 
-             </div>
-               </div>       
+                </div>
+            </div>}
+            {brojTrenutnogPitanja>=test.brojPitanja &&
+            <div>
+                {"odgovorili ste tacno" + brojTacnihOdgovora+ "od ukupno"+ test.brojPitanja }    
+            </div>}       
         </div>
         )
 }
