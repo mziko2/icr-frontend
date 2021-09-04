@@ -3,31 +3,52 @@ import './testresults.css';
 import {Button} from 'rsuite'
 export class Results extends React.Component {
     constructor(props) {
-       super(props)
+      super(props)
+       fetch("http://localhost:8080/UradenTest").then(data=>data.json()).then(response=>{
+      response=response.map(e=>{
+         return {
+            id:e.BrojTesta,
+            kategorija:e.Kategorija,
+            broj_pitanja:e.BrojPitanja,
+            procenat:e.ProcenatTacnosti
+         }
+       })
+       this.setState(
+          state=>{
+             return {onlinetests:response }
+          }
+       )
+         
+       
+       
+       console.log(response)
+       })
+     
        this.state = {
           onlinetests: [
-             { id: 1, kategorija: "B", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 2, kategorija: "B", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 3, kategorija: "A", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 5, kategorija: "C", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 6, kategorija: "A", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 7, kategorija: "C", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 8, kategorija: "B", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 9, kategorija: "C", broj_pitanja: 30, vec_radjen:"50%" },
-             { id: 10, kategorija: "B", broj_pitanja: 30, vec_radjen:"50%" }
+
+          /*   { id: 1, kategorija: "B", broj_pitanja: 30, procenat:"50%" },
+             { id: 2, kategorija: "B", broj_pitanja: 30, procenat:"50%" },
+             { id: 3, kategorija: "A", broj_pitanja: 30, procenat:"50%" },
+             { id: 5, kategorija: "C", broj_pitanja: 30, procenat:"50%" },
+             { id: 6, kategorija: "A", broj_pitanja: 30, procenat:"50%" },
+             { id: 7, kategorija: "C", broj_pitanja: 30, procenat:"50%" },
+             { id: 8, kategorija: "B", broj_pitanja: 30, procenat:"50%" },
+             { id: 9, kategorija: "C", broj_pitanja: 30, procenat:"50%" },
+             { id: 10, kategorija: "B", broj_pitanja: 30, procenat:"50%" }*/
           ]
        }
     }
   
     renderTableData() {
        return this.state.onlinetests.map((tests, index) => {
-          const { id, kategorija, broj_pitanja, vec_radjen } = tests //destructuring
+          const { id, kategorija, broj_pitanja, procenat } = tests 
           return (
              <tr key={id}>
                 <td>{id}</td>
                 <td>{kategorija}</td>
                 <td>{broj_pitanja}</td>
-                <td>{vec_radjen}</td>
+                <td>{procenat*100+' %'}</td>
                 <td><Button className="buttonRegister" href="/test">Ponovi test</Button></td>
              </tr>
           )

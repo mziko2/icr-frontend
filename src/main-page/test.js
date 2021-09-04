@@ -103,7 +103,26 @@ export const Test = ()=> {
         setTimeout(()=>{
             setOdabraniOdgovor(null)
             setBrojTrenutnogPitanja(brojTrenutnogPitanja+1)
-        },4000)
+            if(brojTrenutnogPitanja+1==test.brojPitanja){
+            let procenat=0    
+            if(brojTacnihOdgovora!=0) procenat=test.brojPitanja/brojTacnihOdgovora
+            console.log("Broj pitanja",test.brojPitanja)
+            console.log("Broj tacnih",brojTacnihOdgovora)
+            fetch("http://localhost:8080/UradenTest",{
+                method:"POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                body:JSON.stringify({
+                    "BrojTesta":test.id,
+                    "Kategorija":"B",
+                    "BrojPitanja":test.brojPitanja,
+                    "ProcenatTacnosti":procenat
+                    
+                })
+            } )}
+        },400)
     }
     
 
@@ -151,6 +170,7 @@ export const Test = ()=> {
             </div>}
             {brojTrenutnogPitanja>=test.brojPitanja &&
             <div>
+            
                 {"odgovorili ste tacno" + brojTacnihOdgovora+ "od ukupno"+ test.brojPitanja }    
             </div>}       
         </div>
