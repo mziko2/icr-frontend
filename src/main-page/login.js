@@ -16,7 +16,7 @@ function Login() {
                 <div className="field">
 
                     <div className="label">Password
-                    </div><input type="text" /></div></div>
+                    </div><input type="password" /></div></div>
             <div>
                 <Button className="buttonPrijava" >Prijava</Button>
             </div>

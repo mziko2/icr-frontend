@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import './popup.css';
+import { Button } from 'rsuite';
 
 
 const ControlledPopup = () => {
@@ -13,47 +14,55 @@ const ControlledPopup = () => {
         Controlled Popup
       </button>
       <Popup open={open} closeOnDocumentClick onClose={closeModal} className="my-popup">
-        <div className="popup">
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-
-                    <div className="field">Datum časa: </div>
-
-                    <div className="field">Vrijeme časa: </div>
-
-                    <div className="field">Instruktor: </div>
-
-                    <div className="field">Vozilo: </div>
-
-                    <div className="field">Kategorija: </div>
-
-                    <button onClick={closeModal}>Otkaži</button>
-
-                    </div>
-                    <div className="col">
-
-                        <div className="field">
-                        <input type="text" /></div>
-
-                        <div className="field">
-                        <input type="text" /></div>
-                        
-                        <div className="field">
-                        <div className="fieldsOther">instruktora</div></div>
-
-                        <div className="field">
-                        <div className="fieldsOther">naziv vozila</div></div>
-                        
-                        <div className="field">
-                        <div className="fieldsOther">skracenica kategorije</div></div>
-
-                        <button>Potvrdi</button>
-
-                    </div>
-                </div>
-            </div>
-                
+        <div className="conatiner">
+          <div className="row">
+              <div className="col">
+              <div className="popupField">Datum časa: </div>
+              </div>
+              <div className="col-md-7">
+              <input type="text" className="input-group-text popupRight" />
+              </div>
+          </div>
+          <div className="row">
+              <div className="col">
+              <div className="popupField">Vrijeme časa: </div>
+              </div>
+              <div className="col-md-7">
+              <input type="text" className="input-group-text popupRight" />
+              </div>
+          </div>
+          <div className="row">
+              <div className="col">
+              <div className="popupField">Instruktor: </div>
+              </div>
+              <div className="col-md-7">
+              <div className="fieldsOther popupRight">Ovdje treba ici naziv instruktora</div>
+              </div>
+          </div>
+          <div className="row">
+              <div className="col">
+              <div className="popupField">Vozilo: </div>
+              </div>
+              <div className="col-md-7">
+              <div className="fieldsOther popupRight">Ovdje treba ici naziv vozila</div>
+              </div>
+          </div>
+          <div className="row">
+              <div className="col">
+              <div className="popupField">Kategorija: </div>
+              </div>
+              <div className="col-md-7">
+              <div className="fieldsOther popupRight">Ovdje treba ici naziv kategorije</div>
+              </div>
+          </div>
+          <div className="row">
+              <div className="col">
+              <Button className="btn-outline-danger answer" onClick={closeModal}>Otkaži</Button>
+              </div>
+              <div className="col">
+              <Button className="btn-outline-primary answer">Potvrdi</Button>
+              </div>
+          </div>
         </div>
       </Popup>
     </div>
