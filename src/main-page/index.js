@@ -12,6 +12,7 @@ import {NavBarInstance} from './navigation';
 import PocetnaUser from './pocetnaUser'
 import Report from './report/report'
 import {Profile} from './profile/profile'
+import {Results} from './testresults/testresults'
 
 import {Schedule} from './myschedule/schedule'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -34,6 +35,8 @@ function App() {
     <Route path="/report" component={Report}/>
     <Route path="/schedule" component={Schedule}/>
     <Route path="/profile" component={Profile}/>
+    <Route path="/results" component={Results}/>
+
 
     </Switch>
     </Router>

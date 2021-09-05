@@ -51,6 +51,30 @@ cursor: pointer;
 overflow: hidden;
 width: 75%;
 }
+.correctAnswer{
+    width: max-content;
+margin-bottom: 1rem;
+background-color: green;
+background-repeat: no-repeat;
+border: 2px solid #ff6600;
+color: aliceblue;
+border-radius: 2cm;
+cursor: pointer;
+overflow: hidden;
+width: 75%;
+}
+.incorrectAnswer{
+    width: max-content;
+margin-bottom: 1rem;
+background-color: red;
+background-repeat: no-repeat;
+border: 2px solid #ff6600;
+color: aliceblue;
+border-radius: 2cm;
+cursor: pointer;
+overflow: hidden;
+width: 75%;
+}
 
 .naslov{
 

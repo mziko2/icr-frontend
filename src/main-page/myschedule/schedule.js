@@ -17,8 +17,17 @@ export class Schedule extends React.Component {
              { id:6,datum: "1.9.2021", vrijeme: "13:00",vozilo:"Opel Corsa", instruktor: "Senad Bašic", kategorija:"B" },
           ]
        }
+       this.izbaci.bind(this)
+       this.renderTableData.bind(this)
     }
-  
+   izbaci(id) {
+      let filteredArray = this.state.onlinetests.filter(item => item.id !== id)
+      this.setState((state) => {
+         return {onlinetests: filteredArray};
+       });
+          
+   }
+ 
     renderTableData() {
        return this.state.onlinetests.map((tests, index) => {
           const { id, datum, vrijeme, instruktor,kategorija,vozilo } = tests //destructuring
@@ -29,7 +38,7 @@ export class Schedule extends React.Component {
                 <td>{instruktor}</td>
                 <td>{vozilo}</td>
                 <td>{kategorija}</td>
-                <td><Button className="otkazi" >Otkaži</Button></td>
+                <td><Button onClick={()=>this.izbaci(id)} className="otkazi" >Otkaži</Button></td>
              </tr>
           )
        })
@@ -56,7 +65,7 @@ export class Schedule extends React.Component {
              </table>
              <div >
                <Button id={"zakazi"} className="otkazi" >Zakaži čas</Button> 
-               <ControlledPopup/>
+               <ControlledPopup id={"zakazi"} className="otkazi"/>
                   </div>
           </div>
        )
