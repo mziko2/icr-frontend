@@ -4,7 +4,7 @@ import './Onama.css';
 import { Button } from 'rsuite';
 import Footer from '../components/Footer'
 import { makeStyles } from '@material-ui/core';
-
+import { NavBarUser } from '../after-login/navBarUser/navBarUser';
 
 const useStyles = makeStyles((theme)=>({
     answer:{
@@ -122,7 +122,7 @@ export const Test = ()=> {
                     
                 })
             } )}
-        },400)
+        },3000)
     }
     
 
@@ -151,7 +151,10 @@ export const Test = ()=> {
    
 
     return (
-        <div className="test">
+        <div> 
+
+            <NavBarUser/>
+            <div className="test">
             <div className="naslov">Test broj {test.id}</div>
             {brojTrenutnogPitanja<test.brojPitanja && <div className='okvir'>
                 <div className='pitanje'>
@@ -174,6 +177,8 @@ export const Test = ()=> {
                 {"odgovorili ste tacno" + brojTacnihOdgovora+ "od ukupno"+ test.brojPitanja }    
             </div>}       
         </div>
+        </div>
+        
         )
 }
 
