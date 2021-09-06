@@ -1,4 +1,6 @@
 
+  
+
 import './login.css';
 import './Onama.css';
 import { Button } from 'rsuite';
@@ -38,7 +40,7 @@ const [username, setUserName] = useState();
       username,
       password
     });
-    if(username===user.login.Username){
+    if(user!=null && username===user.login.Username){
         history.push("/user/main/"+user.login.Username)
     }
   }
@@ -70,6 +72,5 @@ const [username, setUserName] = useState();
 
 
 export default Login;
-
 
 
