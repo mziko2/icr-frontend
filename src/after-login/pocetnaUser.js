@@ -1,7 +1,6 @@
 import './pocetnaUser.css';
-import lecon from './lecon.png'; 
 import { Button } from 'rsuite';
-
+import { NavBarInstance } from './navigaton-login/navigation';
 
 
 function PocetnaUser() {

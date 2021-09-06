@@ -18,7 +18,7 @@ function Login() {
                     <div className="label">Password
                     </div><input type="password" /></div></div>
             <div>
-                <Button className="buttonPrijava" >Prijava</Button>
+                <Button className="buttonPrijava" href="/user/main" >Prijava</Button>
             </div>
             <div className="color">
                 Zaboravili ste username ili password?</div>

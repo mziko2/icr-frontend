@@ -7,15 +7,15 @@ import {Test} from './test'
 import Login from './login'
 import Register from './signup/signup';
 import {Jobs} from './jobs/jobs';
-import {OnlineTests} from './onlinetests/onlinetests'
+import {OnlineTests} from '../after-login/onlinetests/onlinetests'
 import {NavBarInstance} from './navigation';
-import PocetnaUser from './pocetnaUser'
-import Report from './report/report'
-import {Profile} from './profile/profile'
-import {Results} from './testresults/testresults'
-
-import {Schedule} from './myschedule/schedule'
+import PocetnaUser from '../after-login/pocetnaUser'
+import Report from '../after-login/report/report'
+import {Profile} from '../after-login/profile/profile'
+import {Results} from '../after-login/testresults/testresults'
+import {Schedule} from '../after-login/myschedule/schedule'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
@@ -29,19 +29,19 @@ function App() {
     <Route path="/login" component={Login}/>
     <Route path="/signup" component={Register}/>
     <Route path="/jobs" component={Jobs}/>
-    <Route path="/onlinetests" component={OnlineTests}/>
+    <Route path="/user/onlinetests" component={OnlineTests}/>
     <Route path="/test" component={Test}/>
     <Route path="/userMain" component={PocetnaUser}/>
     <Route path="/report" component={Report}/>
     <Route path="/schedule" component={Schedule}/>
-    <Route path="/profile" component={Profile}/>
+    <Route path="/user/profile" component={Profile}/>
     <Route path="/results" component={Results}/>
-
-
+    <Route path="/user/main" component={PocetnaUser}/>
     </Switch>
     </Router>
        </div>
   );
 }
+
 
 export default App;
