@@ -42,7 +42,7 @@ function App() {
     <Route path="/results" component={Results}>
 
     </Route>
-    <Route path="/user/main" component={PocetnaUser}/>
+    <Route path="/user/main" component={Schedule}/>
     </Switch>
     
     </Router>

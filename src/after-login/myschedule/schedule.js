@@ -67,8 +67,9 @@ export class Schedule extends React.Component {
                 </tbody>
              </table>
              <div >
-               <Button id={"zakazi"} className="otkazi" >Zakaži čas</Button> 
-               <ControlledPopup id={"zakazi"} className="otkazi"/>
+               
+               <ControlledPopup >Zakaži test </ControlledPopup>
+ 
                   </div>
           </div>
           </div>
