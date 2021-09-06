@@ -1,10 +1,14 @@
 import { PieChart } from 'react-minimal-pie-chart';
 import './report.css';
 import MyChart from './chart'
+import { NavBarUser } from '../navBarUser/navBarUser';
+
 
 function Report() {
     return (
-        <div class="container">
+        <div>
+            <NavBarUser/>
+            <div class="container">
             <div class="row">
                 <div class="col" id="chartcol">
             <PieChart
@@ -41,6 +45,8 @@ function Report() {
             </div>
         </div>
     </div>
+        </div>
+      
     );
 }
 

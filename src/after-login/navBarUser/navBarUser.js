@@ -22,7 +22,7 @@ const Styles = styled.div`
     background:blue;
   }
 `;
-export const NavBarInstanceLogin = () => (
+export const NavBarUser = () => (
   <Styles>
     <Navbar expand="lg">
       <Navbar.Brand href="/user/main">Moj raspored</Navbar.Brand>

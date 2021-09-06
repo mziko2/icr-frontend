@@ -2,6 +2,7 @@ import React from 'react';
 import './schedule.css';
 import {Button} from 'rsuite'
 import ControlledPopup from './popup';
+import { NavBarUser } from '../navBarUser/navBarUser';
 
 
 export class Schedule extends React.Component {
@@ -46,7 +47,9 @@ export class Schedule extends React.Component {
  
     render() {
        return (
-          <div className="tabela">
+          <div>
+             <NavBarUser/>
+             <div className="tabela">
              <h1 id='title'>Moj raspored</h1>
              <h4 id='title'>Zakazani  časovi vožnje:</h4>
              <table id='onlinetests'>
@@ -68,6 +71,8 @@ export class Schedule extends React.Component {
                <ControlledPopup id={"zakazi"} className="otkazi"/>
                   </div>
           </div>
+          </div>
+         
        )
     }
  }

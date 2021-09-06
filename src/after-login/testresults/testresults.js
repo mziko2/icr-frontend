@@ -1,6 +1,8 @@
 import React from 'react'; 
 import './testresults.css';
 import {Button} from 'rsuite'
+import { NavBarUser } from '../navBarUser/navBarUser';
+
 export class Results extends React.Component {
     constructor(props) {
       super(props)
@@ -57,22 +59,25 @@ export class Results extends React.Component {
  
     render() {
        return (
-          <div className="tabela">
-             <h1 id='title'>Rezultati testova</h1>
-             <table id='onlinetests'>
-                <tbody>
-                   <tr>
-                       <th>Broj testa</th>
-                       <th>Kategorija</th>
-                       <th>Broj pitanja</th>
-                       <th>Procenat tačnih</th>
-                       <th></th>
+          <div>
+             <NavBarUser/>
+             <div className="tabela">
+          <h1 id='title'>Rezultati testova</h1>
+          <table id='onlinetests'>
+             <tbody>
+                <tr>
+                    <th>Broj testa</th>
+                    <th>Kategorija</th>
+                    <th>Broj pitanja</th>
+                    <th>Procenat tačnih</th>
+                    <th></th>
 
-                   </tr>
-                   {this.renderTableData()}
-                </tbody>
-             </table>
-          </div>
+                </tr>
+                {this.renderTableData()}
+             </tbody>
+          </table>
+       </div></div>
+          
        )
     }
  }

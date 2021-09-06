@@ -1,12 +1,12 @@
-import './Faq.css';
-import Footer from '../components/Footer'
-import {NavBarInstance} from './navigation'
+import './faq.css';
+import Footer from '../../components/Footer'
+import {NavBarUser} from '../navBarUser/navBarUser'
 
 
 
-function FAQ() {
+function FAQUser() {
     return (
-        <div> <NavBarInstance/>
+        <div> <NavBarUser/>
         <div className="onama">
 
             <div className="naslov" >
@@ -39,4 +39,4 @@ function FAQ() {
     );
 }
 
-export default FAQ;
+export default FAQUser;

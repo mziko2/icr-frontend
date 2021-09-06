@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from 'react-select'
-
+import {NavBarInstance} from '../navigation'
 import './jobs.css';
 import {
     Accordion,
@@ -63,62 +63,66 @@ export class Jobs extends React.Component {
     render() {
     
         return (
-            <div id={"okvir"} class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div className="konkursi">KONKURSI</div>
-                        <div className="konkursNaslov">Naziv konkursa</div>
-                        <Accordion allowMultipleExpanded>
-
-                            {this.renderTableData()}
-                        </Accordion>
-                    </div>
-                    <div class="col-6">
+            <div> 
                 
+                <NavBarInstance/>
+                 <div id={"okvir"} class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div className="konkursi">KONKURSI</div>
+                    <div className="konkursNaslov">Naziv konkursa</div>
+                    <Accordion allowMultipleExpanded>
 
-            
-            <div className="konkursiPolja">
-
-            <div className="fieldKonkurs">
-                    <div className="label">Odabrana pozicija</div>
-                    <input value={this.state.userInput}  readOnly = {true} id={"odabrani"} type="text" /></div>
-                    
-
-                    <div className="fieldKonkurs">
-                    <div className="label">Ime i prezime*</div>
-                    <input type="text" /></div>
-                    
-                    <div className="fieldKonkurs">
-                    <div className="label">Adresa stanovanja*</div>
-                    <input type="text" /></div>
-
-                    <div className="fieldKonkurs">
-                    <div className="label">Datum rodenja*</div>
-                    <input type="date" /></div>
-
-                    
-                    <div className="fieldKonkurs">
-                    <div className="label">Kontakt telefon*</div>
-                    <input type="text" /></div>
-
-                    <div  className="fieldKonkurs">
-                    <div className="label">Obrazovanje*
-                </div><input id={"obrazovanje"} type="text" /></div>
-                
-                    <div className="fieldKonkurs">
-                    <div className="label">Radno iskustvo*</div>
-                    <input type="text" id={"obrazovanje"} /></div>
-                
-               
-                <div className="fieldKonkurs">
-                    <div id={"obaveznoPolje"} className="label">*- Polje je obavezno</div>
-                    <Button   className="buttonApliciraj" >Apliciraj</Button>
-                    </div>
-
-            </div>
-        </div>
-                    </div>
+                        {this.renderTableData()}
+                    </Accordion>
                 </div>
+                <div class="col-6">
+            
+
+        
+        <div className="konkursiPolja">
+
+        <div className="fieldKonkurs">
+                <div className="label">Odabrana pozicija</div>
+                <input value={this.state.userInput}  readOnly = {true} id={"odabrani"} type="text" /></div>
+                
+
+                <div className="fieldKonkurs">
+                <div className="label">Ime i prezime*</div>
+                <input type="text" /></div>
+                
+                <div className="fieldKonkurs">
+                <div className="label">Adresa stanovanja*</div>
+                <input type="text" /></div>
+
+                <div className="fieldKonkurs">
+                <div className="label">Datum rodenja*</div>
+                <input type="date" /></div>
+
+                
+                <div className="fieldKonkurs">
+                <div className="label">Kontakt telefon*</div>
+                <input type="text" /></div>
+
+                <div  className="fieldKonkurs">
+                <div className="label">Obrazovanje*
+            </div><input id={"obrazovanje"} type="text" /></div>
+            
+                <div className="fieldKonkurs">
+                <div className="label">Radno iskustvo*</div>
+                <input type="text" id={"obrazovanje"} /></div>
+            
+           
+            <div className="fieldKonkurs">
+                <div id={"obaveznoPolje"} className="label">*- Polje je obavezno</div>
+                <Button   className="buttonApliciraj" >Apliciraj</Button>
+                </div>
+
+        </div>
+    </div>
+                </div>
+            </div></div>
+          
         )
     }
 }

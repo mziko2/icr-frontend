@@ -1,6 +1,9 @@
 import React from 'react'; 
 import './onlinetests.css';
 import {Button} from 'rsuite'
+import { NavBarUser } from '../navBarUser/navBarUser';
+
+
 export class OnlineTests extends React.Component {
     constructor(props) {
        super(props)
@@ -36,7 +39,10 @@ export class OnlineTests extends React.Component {
  
     render() {
        return (
-          <div className="tabela">
+
+         <div>
+            <NavBarUser/>
+            <div className="tabela">
              <h1 id='title'>Online Testovi</h1>
              <table id='onlinetests'>
                 <tbody>
@@ -52,6 +58,8 @@ export class OnlineTests extends React.Component {
                 </tbody>
              </table>
           </div>
+         </div>
+       
        )
     }
  }

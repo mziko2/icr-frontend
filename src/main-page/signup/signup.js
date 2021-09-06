@@ -1,9 +1,12 @@
 import './signup.css';
 import { Button } from 'rsuite';
+import {NavBarInstance} from '../navigation'
 
 function Register() {
     return (
-        <div className="register">
+        <div>
+            <NavBarInstance/>
+            <div className="register">
             <div id={"okvir"} className="naslov container">Registruj se</div>
             <div className="fields">
                     <div className="field">
@@ -36,6 +39,8 @@ function Register() {
                 <Button className="buttonRegister" >Registruj se</Button>
             </div>
         </div>
+        </div>
+        
 
     );
 }

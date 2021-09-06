@@ -2,12 +2,16 @@ import './App.css';
 import lecon from './lecon.png'; 
 import { Button } from 'rsuite';
 import Footer from '../components/Footer'
+import {NavBarInstance} from './navigation'
+
 import './pocenta.css';
 
 
 function Pocetna() {
   return (
-    <div className="Pocetna">
+    <div>
+      <NavBarInstance/>
+      <div className="Pocetna">
     <div> <img className="photo" src={lecon} alt="Logo" /></div>
      <div id={'text'}>
       Nas cilj je pracenjem trendova, kao i potreba naših kandidata bez obzira na njihovu starosnu dob 
@@ -20,6 +24,8 @@ function Pocetna() {
 
       </div> 
       </div>
+    </div>
+    
   );
 }
 

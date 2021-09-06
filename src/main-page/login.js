@@ -1,11 +1,13 @@
 import './login.css';
 import './Onama.css';
 import { Button } from 'rsuite';
+import {NavBarInstance} from './navigation'
 
 import Footer from '../components/Footer'
 
 function Login() {
-    return (
+    return (<div>
+         <NavBarInstance/>
         <div className="login">
             <div className="naslov">Prijavi se</div>
             <div className="fields">
@@ -25,6 +27,8 @@ function Login() {
             <div className="registrujSe">  <div>  Niste registrovani ?  </div><div className="color2"><a className="color2" href="/signup">Registrujte se!</a></div></div>
         </div>
 
+    </div>
+        
     );
 }
 

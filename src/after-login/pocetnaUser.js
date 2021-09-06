@@ -1,11 +1,12 @@
 import './pocetnaUser.css';
 import { Button } from 'rsuite';
-import { NavBarInstance } from './navigaton-login/navigation';
-
+import {NavBarUser} from './navBarUser/navBarUser'
 
 function PocetnaUser() {
   return (
-    <div className="Pocetna">
+    <div>
+      <NavBarUser/>
+  <div className="Pocetna">
       <div className='naslovRaspored'>Moj raspored</div>
      <div id={'text'}>
       Morate položiti testove kako bi imali raspored vožnji.
@@ -16,6 +17,9 @@ function PocetnaUser() {
 
       </div> 
       </div>
+
+    </div>
+  
   );
 }
 
