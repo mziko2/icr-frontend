@@ -52,6 +52,15 @@
     margin-top: 5%;
     width: 9%;
     height: 7%;
+    text-decoration: none;
+    background-color: #ff6600;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600 ;
+    cursor:pointer;
+    overflow: hidden; 
   }
 
   .tabela {
@@ -64,3 +73,54 @@
       height: 40px;
   }
  
+  .button #zakazi {
+    float: left;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 9%;
+    height: 7%;
+    text-decoration: none;
+    background-color: #ff6600;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600 ;
+    cursor:pointer;
+    overflow: hidden; 
+  }
+
+  input[type=button]  {
+    float: left;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 9%;
+    height: 7%;
+    text-decoration: none;
+    background-color: #ff6600;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600 ;
+    cursor:pointer;
+    overflow: hidden; 
+  }
+
+  .button {
+    float: left;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 9%;
+    height: 7%;
+    text-decoration: none;
+    background-color: #ff6600;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600 ;
+    cursor:pointer;
+    overflow: hidden; 
+
+  }

@@ -11,7 +11,7 @@ const ControlledPopup = () => {
   return (
     <div>
       <button type="button" className="button" onClick={() => setOpen(o => !o)}>
-        Controlled Popup
+        Zakaži čas
       </button>
       <Popup open={open} closeOnDocumentClick onClose={closeModal} className="my-popup">
         <div className="conatiner">
@@ -20,7 +20,7 @@ const ControlledPopup = () => {
               <div className="popupField">Datum časa: </div>
               </div>
               <div className="col-md-7">
-              <input type="text" className="input-group-text popupRight" />
+              <input type="date" className="input-group-text popupRight" />
               </div>
           </div>
           <div className="row">
@@ -28,7 +28,7 @@ const ControlledPopup = () => {
               <div className="popupField">Vrijeme časa: </div>
               </div>
               <div className="col-md-7">
-              <input type="text" className="input-group-text popupRight" />
+              <input type="time" className="input-group-text popupRight" />
               </div>
           </div>
           <div className="row">
@@ -36,7 +36,7 @@ const ControlledPopup = () => {
               <div className="popupField">Instruktor: </div>
               </div>
               <div className="col-md-7">
-              <div className="fieldsOther popupRight">Ovdje treba ici naziv instruktora</div>
+              <div className="fieldsOther popupRight">Senad Bašic</div>
               </div>
           </div>
           <div className="row">
@@ -44,7 +44,7 @@ const ControlledPopup = () => {
               <div className="popupField">Vozilo: </div>
               </div>
               <div className="col-md-7">
-              <div className="fieldsOther popupRight">Ovdje treba ici naziv vozila</div>
+              <div className="fieldsOther popupRight">Opel Corsa</div>
               </div>
           </div>
           <div className="row">
@@ -52,15 +52,15 @@ const ControlledPopup = () => {
               <div className="popupField">Kategorija: </div>
               </div>
               <div className="col-md-7">
-              <div className="fieldsOther popupRight">Ovdje treba ici naziv kategorije</div>
+              <div className="fieldsOther popupRight">B</div>
               </div>
           </div>
           <div className="row">
               <div className="col">
-              <Button className="btn-outline-danger answer" onClick={closeModal}>Otkaži</Button>
+              <Button className="otkaziAAA" onClick={closeModal}>Otkaži</Button>
               </div>
-              <div className="col">
-              <Button className="btn-outline-primary answer">Potvrdi</Button>
+              <div  className="col">
+              <Button className="potvrdi" >Potvrdi</Button>
               </div>
           </div>
         </div>
