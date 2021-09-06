@@ -27,7 +27,7 @@ async function loginUser(credentials) {
    }
 
 
-function Login({setToken}) {
+function Login() {
     let history = useHistory();
 const [username, setUserName] = useState();
   const [password, setPassword] = useState();
@@ -39,8 +39,7 @@ const [username, setUserName] = useState();
       password
     });
     if(username===user.login.Username){
-        console.log("idiii")
-        history.push("/user/main")
+        history.push("/user/main/"+user.login.Username)
     }
   }
     return (<div>
