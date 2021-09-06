@@ -1,11 +1,48 @@
+
 import './login.css';
 import './Onama.css';
 import { Button } from 'rsuite';
-import {NavBarInstance} from './navigation'
-
+import { PropTypes } from 'prop-types';
 import Footer from '../components/Footer'
+import {useState} from 'react';
+import {NavBarInstance} from './navigation'
+import { useHistory } from "react-router-dom";
 
-function Login() {
+
+async function loginUser(credentials) {
+    return fetch('http://localhost:8080/Osoba/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    }).then((response)=>response.json()).then((json => {
+        console.log(json);
+        return json;
+    })).catch(error =>{
+          console.error('There was an error!', error);
+          alert("Pogrešan username ili password! Pokušaj ponovo!");
+      });
+      
+   }
+
+
+function Login({setToken}) {
+    let history = useHistory();
+const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const user = await loginUser({
+      username,
+      password
+    });
+    if(username===user.login.Username){
+        console.log("idiii")
+        history.push("/user/main")
+    }
+  }
     return (<div>
          <NavBarInstance/>
         <div className="login">
@@ -13,14 +50,14 @@ function Login() {
             <div className="fields">
                 <div className="field">
                     <div className="label">Username</div>
-                    <input type="text" /></div>
+                    <input type="text" onChange={e => setUserName(e.target.value)} /></div>
                 
                 <div className="field">
 
                     <div className="label">Password
-                    </div><input type="password" /></div></div>
+                    </div><input type="password" onChange={e => setPassword(e.target.value)} /></div></div>
             <div>
-                <Button className="buttonPrijava" href="/user/main" >Prijava</Button>
+                <Button className="buttonPrijava" onClick={handleSubmit}  >Prijava</Button>
             </div>
             <div className="color">
                 Zaboravili ste username ili password?</div>
@@ -32,4 +69,8 @@ function Login() {
     );
 }
 
+
 export default Login;
+
+
+
