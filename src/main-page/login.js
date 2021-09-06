@@ -38,7 +38,7 @@ const [username, setUserName] = useState();
       username,
       password
     });
-    if(username===user.login.Username){
+    if(user!=null &&  username===user.login.Username){
         console.log("idiii")
         history.push("/user/main")
     }
