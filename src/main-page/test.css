@@ -101,3 +101,9 @@ input[type=text] {
     border: 2px solid black;
     border-radius: 0.7cm;
   }
+
+  .rezultatiTesta{
+    font-size: 37px;
+    color: aliceblue;
+
+  }

@@ -37,9 +37,8 @@ function App() {
     <Route path="/test" component={Test}/>
     <Route path="/userMain" component={PocetnaUser}/>
     <Route path="/report" component={Report}/>
-    <Route path="/schedule" component={Schedule}/>
     <Route path="/user/profile" component={Profile}/>
-    <Route path="/results" component={Results}>
+    <Route path="/user/results" component={Results}>
 
     </Route>
     <Route path="/user/main" component={Schedule}/>

@@ -30,7 +30,7 @@ export const NavBarUser = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item><Nav.Link href="/user/onlinetests">Online testovi</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/user/main">Rezultati testova</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/user/results">Rezultati testova</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="/user/faq">FAQ</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
