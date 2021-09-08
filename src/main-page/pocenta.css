@@ -1,0 +1,58 @@
+.pocetna {
+    text-align: left;
+    margin: 5% 0 0% 10%;
+    width: 650px;
+}
+
+.pocetna #text {
+    padding-bottom: 5%;
+    padding-top: 3%;
+    color: white;
+   }
+
+   .photo {
+    margin-top: 0%;
+   
+  }
+
+  .button-Main {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;   
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    cursor:pointer;
+    overflow: hidden;        
+  }
+  
+  .button-Register{
+    padding: 0.5%;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 0px;   
+    background-color: #ff6600;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    border-color: #ff6600 ;
+    cursor:pointer;
+    overflow: hidden;   
+  }
+
+
+  .button-Main {
+    padding: 0.5%;
+    text-decoration: none;   
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 2cm;
+    cursor:pointer;
+    overflow: hidden;        
+  }
+  
