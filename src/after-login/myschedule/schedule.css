@@ -20,7 +20,7 @@
     box-shadow: 0px 1px 0px 0px rgba(206, 201, 201, 0.99);
 
   }  
-  #onlinetests tr:hover {background-color: #ddd;}
+  #onlinetests tr:hover {background-color: rgba(22, 21, 21, 0.99);;}
   
   #onlinetests th {
     padding-top: 14px;

@@ -8,7 +8,7 @@ export class Profile extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            id: 1, ime: "Emir",prezime:"Kurtovic",adresa:"Zmaj od Bosne bb",jmbg:"2411215475",broj:"234-252",email:"dwad@gmail.com",username:"username"
+            id: 1, ime: "Emir",prezime:"Kurtovic",adresa:"Zmaj od Bosne bb",jmbg:"2411215475",broj:"234-252",email:"dwad@gmail.com",username:"test"
 
         }
     }

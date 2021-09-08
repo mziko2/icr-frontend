@@ -36,7 +36,8 @@ export const NavBarUser = () => (
       </Navbar.Collapse>
       <Navbar.Collapse id="collapse navbar-collapse">
       <Nav className="justify-content-end" style={{ width: "100%" }} >  
-      <Nav.Item  ><Nav.Link href="/user/profile" >Ime usera</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/user/profile" >Profile</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/" >Logout</Nav.Link></Nav.Item>
     </Nav>
     </Navbar.Collapse>
 

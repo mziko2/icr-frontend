@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return(
         <div>
-    <p id={"p1"} >&copy; Copyright by </p>
+    <p id={"p1"} >&copy; Copyright by Mirza žiko &#38; Emir Kurtović </p>
         </div>
     )
 

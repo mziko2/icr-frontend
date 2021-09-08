@@ -20,7 +20,7 @@ function Onama() {
             i bezbjedno upravljanje i snalaženje u svim saobraćajnim situacijama.
         </div>
         <div className='tekst'>
-            <div className="napodnaslovslov">Naša vizija</div>
+            <div className="podnaslov">Naša vizija</div>
             Vizija organizacije je dobijanje vozačke dozvole predstaviti kroz prizmu osposobljavanja upravljanjem motornim vozilom željene kategorije, a ne kroz zakonske obaveze
             i prepreke neophodne za samostalnu vožnju. Želimo ostvariti sigurnost na cestama širom Bosne i Hercegovine obučavanjem kandidata u njihovom nastojanju da postanu obazrivi,
             pažljivi i savjesni vozači. Težimo da u budućnosti pružimo najsavreminiji pristup i metode rada sa kandidatima, nudeci im online platformu za učenje i interakciju, čime ćemo postati
