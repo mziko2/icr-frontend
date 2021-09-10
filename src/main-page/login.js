@@ -8,6 +8,7 @@ import { PropTypes } from 'prop-types';
 import Footer from '../components/Footer'
 import {useState} from 'react';
 import {NavBarInstance} from './navigation'
+import { NavBarUser } from '../after-login/navBarUser/navBarUser';
 import { useHistory } from "react-router-dom";
 
 
@@ -20,6 +21,8 @@ async function loginUser(credentials) {
       body: JSON.stringify(credentials)
     }).then((response)=>response.json()).then((json => {
         console.log(json);
+        <NavBarUser userName={json.login.Username}/>
+        console.log(json.login.Username)
         return json;
     })).catch(error =>{
           console.error('There was an error!', error);
@@ -28,8 +31,7 @@ async function loginUser(credentials) {
       
    }
 
-
-function Login() {
+   function Login() {
     let history = useHistory();
 const [username, setUserName] = useState();
   const [password, setPassword] = useState();

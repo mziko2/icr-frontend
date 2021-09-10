@@ -22,7 +22,10 @@ const Styles = styled.div`
     background:blue;
   }
 `;
-export const NavBarUser = () => (
+function ispisi(userName1){
+  console.log(userName1);
+}
+export const NavBarUser = ({props}) => (
   <Styles>
     <Navbar expand="lg">
       <Navbar.Brand href="/user/main">Moj raspored</Navbar.Brand>
@@ -36,7 +39,8 @@ export const NavBarUser = () => (
       </Navbar.Collapse>
       <Navbar.Collapse id="collapse navbar-collapse">
       <Nav className="justify-content-end" style={{ width: "100%" }} >  
-      <Nav.Item  ><Nav.Link href="/user/profile" >Ime usera</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/user/profile" >{props.userName}</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/" >Odjavi se</Nav.Link></Nav.Item>
     </Nav>
     </Navbar.Collapse>
 
