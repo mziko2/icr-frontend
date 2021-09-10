@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme)=>({
 
 const dummyTest={
     id: 4, 
-    brojPitanja: 2,
+    brojPitanja: 4,
     pitanja:[
         {
             tekstPitanja: "Koje je najmanja dozvoljena brzina kretanja automobila na autoputu?",
@@ -70,18 +70,40 @@ const dummyTest={
             odgTacan:"60 km/h", 
         },
         {
-            tekstPitanja: "Koje je najveca dozvoljena brzina kretanja automobila na autoputu?",
+            tekstPitanja: "Kako se naziva uzdužni dio kolovoza namijenjen za saobraćaj vozila u jednom smjeru?",
             odgovori:[
-                "30 km/h",
-                "40 km/h",
-                "50 km/h",
-                "1060 km/h"
+                "Saobracajna traka",
+                "Kolovozna traka",
+                "Kolovoz",
+                "Put"
             ],
-            odgTacan:"1060 km/h", 
+            odgTacan:"Kolovozna traka", 
+        },
+        {
+            tekstPitanja: "Projektovanjem i gradnjom novih javnih puteva, osim lokalnih, mora se obezbijediti da podnesu osovinsko opterećenje od:",
+            odgovori:[
+                "Najmanje 11,5 tona",
+                "Najmanje 14,5 tona",
+                "Najmanje 13,5 tona",
+                "Najmanje 12,5 tona"
+            ],
+            odgTacan:"Najmanje 11,5 tona", 
+        },
+        {
+            tekstPitanja: "Iznad kolovoza javnog puta mora da postoji slobodan prostor u visini od najmanje:",
+            odgovori:[
+                "4,5 m",
+                "5 m",
+                "3 m",
+                "3,5 m"
+            ],
+            odgTacan:"4,5 m", 
         },
     ]
     
  }
+
+ 
 
 export const Test = ()=> {
     const classes = useStyles()
@@ -105,7 +127,7 @@ export const Test = ()=> {
             setBrojTrenutnogPitanja(brojTrenutnogPitanja+1)
             if(brojTrenutnogPitanja+1==test.brojPitanja){
             let procenat=0    
-            if(brojTacnihOdgovora!=0) procenat=test.brojPitanja/brojTacnihOdgovora
+             procenat=brojTacnihOdgovora/test.brojPitanja
             console.log("Broj pitanja",test.brojPitanja)
             console.log("Broj tacnih",brojTacnihOdgovora)
             fetch("http://localhost:8080/UradenTest",{
@@ -172,9 +194,13 @@ export const Test = ()=> {
                 </div>
             </div>}
             {brojTrenutnogPitanja>=test.brojPitanja &&
-            <div>
+           <div className="rezultatiTesta">
             
-                {"odgovorili ste tacno" + brojTacnihOdgovora+ "od ukupno"+ test.brojPitanja }    
+                {"Odgovorili ste tacno " + brojTacnihOdgovora+ " od ukupno "+ test.brojPitanja+" pitanja.\n"
+                +"Procenat tačnosti je "+ Math.round((brojTacnihOdgovora/test.brojPitanja)*100)+"%"
+                
+                
+                }    
             </div>}       
         </div>
         </div>

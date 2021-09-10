@@ -89,7 +89,9 @@
     font-size: smaller;
     width: 65%;
 }
-
+#datumKonkursi{
+  width: 50%;
+}
   .accordion {
     overflow-y: scroll;
     max-height: 65%;
@@ -103,11 +105,12 @@
     font-size: large;
     border-radius: 0.7cm;
   }
-  input[type=date] {
+  input[type=date]  .dateKonkursi  {
     border: 2px solid black;
     border-radius: 0.7cm;
     width: 50%;
   }
+ 
  #obrazovanje {
    height: 3cm;
 
@@ -119,4 +122,4 @@
    .konkursiPolja{
      font-size: 45px;
    }
-   
+  

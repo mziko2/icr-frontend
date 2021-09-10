@@ -14,20 +14,20 @@ function Onama() {
         </div>
 
         <div className='tekst'>
-            <div className="naslov">Naša misija</div>
+            <div className="podnaslov">Naša misija</div>
             Autoškola "Lecon" osnovana je sa misijom osposobljavanja kandidata da na zabavan i
             ekonomičan način postanu  savjesni učesnici u saobraćaju tokom obuke, pripremamo kandidate za pravilno
             i bezbjedno upravljanje i snalaženje u svim saobraćajnim situacijama.
         </div>
         <div className='tekst'>
-            <div className="naslov">Naša vizija</div>
+            <div className="podnaslov">Naša vizija</div>
             Vizija organizacije je dobijanje vozačke dozvole predstaviti kroz prizmu osposobljavanja upravljanjem motornim vozilom željene kategorije, a ne kroz zakonske obaveze
             i prepreke neophodne za samostalnu vožnju. Želimo ostvariti sigurnost na cestama širom Bosne i Hercegovine obučavanjem kandidata u njihovom nastojanju da postanu obazrivi,
             pažljivi i savjesni vozači. Težimo da u budućnosti pružimo najsavreminiji pristup i metode rada sa kandidatima, nudeci im online platformu za učenje i interakciju, čime ćemo postati
             napristupačnija i najmodernija autoškola u našem okruženju.
         </div>
         <div className='tekst'>
-            <div className="naslov">Naš cilj</div>
+            <div className="podnaslov">Naš cilj</div>
             Naš cilj da praćenjem trendova, kao i potreba naših kandidata bez obzira na njihovu starosnu dob i uvođenjem noviteta za što lakše iskustvo do vozačke dozvole,
             uvijek budemo korak ispred ostalih.
             <ul>

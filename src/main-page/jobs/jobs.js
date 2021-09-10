@@ -97,7 +97,7 @@ export class Jobs extends React.Component {
 
                 <div className="fieldKonkurs">
                 <div className="label">Datum rodenja*</div>
-                <input type="date" /></div>
+                <input id={"datumKonkursi"} type="date" /></div>
 
                 
                 <div className="fieldKonkurs">

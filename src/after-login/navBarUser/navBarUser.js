@@ -33,14 +33,14 @@ export const NavBarUser = ({props}) => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item><Nav.Link href="/user/onlinetests">Online testovi</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/user/main">Rezultati testova</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/user/results">Rezultati testova</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="/user/faq">FAQ</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse id="collapse navbar-collapse">
       <Nav className="justify-content-end" style={{ width: "100%" }} >  
-      <Nav.Item  ><Nav.Link href="/user/profile" >{props.userName}</Nav.Link></Nav.Item>
-      <Nav.Item  ><Nav.Link href="/" >Odjavi se</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/user/profile" >Profile</Nav.Link></Nav.Item>
+      <Nav.Item  ><Nav.Link href="/" >Logout</Nav.Link></Nav.Item>
     </Nav>
     </Navbar.Collapse>
 
