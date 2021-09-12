@@ -6,7 +6,7 @@ import { NavBarUser } from '../navBarUser/navBarUser';
 export class Results extends React.Component {
     constructor(props) {
       super(props)
-       fetch("http://localhost:8080/UradenTest").then(data=>data.json()).then(response=>{
+       fetch("https://dry-fjord-95433.herokuapp.com/UradenTest").then(data=>data.json()).then(response=>{
       response=response.map(e=>{
          return {
             id:e.BrojTesta,

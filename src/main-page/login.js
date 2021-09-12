@@ -1,6 +1,3 @@
-
-  
-
 import './login.css';
 import './Onama.css';
 import { Button } from 'rsuite';
@@ -11,18 +8,14 @@ import {NavBarInstance} from './navigation'
 import { NavBarUser } from '../after-login/navBarUser/navBarUser';
 import { useHistory } from "react-router-dom";
 
-
 async function loginUser(credentials) {
-    return fetch('http://localhost:8080/Osoba/login', {
+    return fetch('https://dry-fjord-95433.herokuapp.com/Osoba/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(credentials)
     }).then((response)=>response.json()).then((json => {
-        console.log(json);
-        <NavBarUser userName={json.login.Username}/>
-        console.log(json.login.Username)
         return json;
     })).catch(error =>{
           console.error('There was an error!', error);
@@ -30,8 +23,16 @@ async function loginUser(credentials) {
       });
       
    }
+function validateUsername(username){
+  if(username.length()<8){
+    return ("disabled");
+  }
+  return("enabled");
+}
+
 
    function Login() {
+     
     let history = useHistory();
 const [username, setUserName] = useState();
   const [password, setPassword] = useState();
@@ -53,12 +54,12 @@ const [username, setUserName] = useState();
             <div className="fields">
                 <div className="field">
                     <div className="label">Username</div>
-                    <input type="text" onChange={e => setUserName(e.target.value)} /></div>
+                    <input type="text" onChange={e => setUserName(e.target.value)} required/></div>
                 
                 <div className="field">
 
                     <div className="label">Password
-                    </div><input type="password" onChange={e => setPassword(e.target.value)} /></div></div>
+                    </div><input type="password" onChange={e => setPassword(e.target.value)} required/></div></div>
             <div>
                 <Button className="buttonPrijava" onClick={handleSubmit}  >Prijava</Button>
             </div>

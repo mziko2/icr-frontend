@@ -39,7 +39,6 @@ function App() {
     <Route path="/report" component={Report}/>
     <Route path="/user/profile" component={Profile}/>
     <Route path="/user/results" component={Results}>
-
     </Route>
     <Route path="/user/main" component={Schedule}/>
     </Switch>

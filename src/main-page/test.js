@@ -130,7 +130,7 @@ export const Test = ()=> {
              procenat=brojTacnihOdgovora/test.brojPitanja
             console.log("Broj pitanja",test.brojPitanja)
             console.log("Broj tacnih",brojTacnihOdgovora)
-            fetch("http://localhost:8080/UradenTest",{
+            fetch("https://dry-fjord-95433.herokuapp.com/UradenTest",{
                 method:"POST",
                 headers: {
                     'Content-Type': 'application/json'
